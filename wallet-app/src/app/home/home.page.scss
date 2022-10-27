@@ -5,3 +5,10 @@ ion-header{
     --background: transparent;
   }
 }
+
+ion-content{
+  .main-header{
+    height: 45vh;
+    background: linear-gradient(90deg, var(--ion-color-tertiary) 10%, var(--ion-color-primary) 100%);
+  }
+}
