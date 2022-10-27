@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'wallet-app',
+  appId: 'com.itdp.IDEAWallet',
+  appName: 'IDEAWallet',
   webDir: 'www',
   bundledWebRuntime: false
 };

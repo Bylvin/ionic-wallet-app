@@ -16,8 +16,8 @@
   <!-- main header -->
   <div class="main-header"></div>
 
-  <!-- Saldo & Top up section -->
   <ion-grid>
+    <!-- Saldo & Top up section -->
     <ion-row>
       <!-- Bagian saldo -->
       <ion-col size="6">
@@ -36,6 +36,7 @@
       </ion-col>
     </ion-row>
 
+    <!-- Text All Feature -->
     <ion-row class="ion-margin-top">
       <ion-col>
         <ion-text class="ion-margin-start" color="light">
@@ -44,6 +45,7 @@
       </ion-col>
     </ion-row>
 
+    <!-- Card List Feature -->
     <ion-row>
       <ion-col size="6" *ngFor="let feature of features">
         <ion-card class="ion-text-center">
@@ -61,5 +63,22 @@
         </ion-card>
       </ion-col>
     </ion-row>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>TRANSAKSI TERAKHIR</ion-label>
+      </ion-list-header>
+
+      <ion-item lines="none" *ngFor="let transaction of transactions">
+        <ion-icon slot="start" name="cash" color="success"></ion-icon>
+        <ion-label class="ion-text-wrap">
+          {{transaction.name}}
+          <p>{{transaction.time}}</p>
+        </ion-label>
+        <ion-text slot="end" [color]="transaction.color">
+          <strong>{{transaction.amount}}</strong>
+        </ion-text>
+      </ion-item>
+    </ion-list>
   </ion-grid>
 </ion-content>
