@@ -21,7 +21,7 @@
     <ion-row>
       <!-- Bagian saldo -->
       <ion-col size="6">
-        <ion-label color="light">
+        <ion-label color="light" class="ion-margin-start">
           SALDO SAYA
           <ion-chip color="dark">Rp5,000,000,000</ion-chip>
         </ion-label>
@@ -33,6 +33,32 @@
           <ion-text>Top Up</ion-text>
           <ion-icon slot="end" name="add" color="light"></ion-icon>
         </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top">
+      <ion-col>
+        <ion-text class="ion-margin-start" color="light">
+          All Features
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6" *ngFor="let feature of features">
+        <ion-card class="ion-text-center">
+          <ion-card-header>
+            <div align="center">
+              <ion-thumbnail>
+                <img [src]="feature.icon">
+              </ion-thumbnail>
+            </div>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-label>{{feature.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
