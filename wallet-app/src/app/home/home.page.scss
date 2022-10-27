@@ -8,7 +8,11 @@ ion-header{
 
 ion-content{
   .main-header{
+    margin-top: -60px; //untuk naikin lewatin ion-header
+    margin-left: -14vh;
     height: 45vh;
+    width: 150%;
     background: linear-gradient(90deg, var(--ion-color-tertiary) 10%, var(--ion-color-primary) 100%);
+    border-radius: 0 0 50% 50%; //bottom left sama right dibikin 50%
   }
 }
