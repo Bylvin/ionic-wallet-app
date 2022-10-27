@@ -3,6 +3,10 @@ ion-header{
 
   ion-item{
     --background: transparent;
+
+    ion-avatar{
+      background: white;
+    }
   }
 }
 
