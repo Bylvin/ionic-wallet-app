@@ -20,3 +20,10 @@ ion-content{
     border-radius: 0 0 50% 50%; //bottom left sama right dibikin 50%
   }
 }
+
+ion-grid{
+  position: absolute; //buat dibawa ke atas page
+  top: 8px;
+  left: 8px;
+  transform: translateY(10vh); //buat turunin ke bawah header
+}
