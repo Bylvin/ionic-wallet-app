@@ -16,7 +16,7 @@ ion-content{
     margin-left: -14vh;
     height: 45vh;
     width: 150%; //dibikin 150 supaya gradient agak panjang
-    background: linear-gradient(90deg, var(--ion-color-tertiary) 10%, var(--ion-color-primary) 100%);
+    background: linear-gradient(90deg, var(--ion-color-megaorange) 40%, var(--ion-color-megayellow) 80%);
     border-radius: 0 0 50% 50%; //bottom left sama right dibikin 50%
   }
 }
@@ -26,4 +26,30 @@ ion-grid{
   top: 8px;
   left: 8px;
   transform: translateY(10vh); //buat turunin ke bawah header
+
+  ion-row{
+    ion-col{
+      ion-label{
+        font-size: 0.8rem;
+
+        ion-chip{
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: var(--ion-color-light);
+          letter-spacing: 0.75px;
+        }
+      }
+
+      ion-button{
+        font-weight: bold;
+        text-transform: none;
+
+        ion-text{
+          color: white !important;
+          font-size: 1rem;
+          text-shadow: 0 0 1px 1px gray;
+        }
+      }
+    }
+  }
 }
